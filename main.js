@@ -35,4 +35,3 @@ fetch("http://reg.bom.gov.au/fwo/IDV60901/IDV60901.95936.json")
         console.log(dateTime, recentTemp)
     })
 
-fetch("ftp://ftp2.bom.gov.au/anon/gen/fwo/IDV10450.txt")

@@ -9,13 +9,19 @@
 </head>
 
 <body>
+    <div style="right: 20; top: 20; position: fixed; display: flex; flex-direction: column">
+        Currently: <span id="temp" style="font-size: 20"></span>
+        <span>(Feels Like: <span id="feel_temp"></span>)</span>
+        <span id="updated"></span>
+        <span id="loc"></span>
+    </div>
     <div style="justify-content: center; flex-direction: row">
         <h1>Test</h1>
     </div>
     <h2>Recently Visited</h2>
-        <div class="row lastVisited">
-                <div id="browserHistory"></div>
-        </div>
+    <div class="row lastVisited">
+        <div id="browserHistory"></div>
+    </div>
     </div>
     <script type="application/javascript" src="./main.js" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>

@@ -22,4 +22,17 @@ chrome.history.search({text: '', maxResults: 4}, function(data) {
 
 fetch("http://reg.bom.gov.au/fwo/IDV60901/IDV60901.95936.json")
     .then(resp => resp.json())
-    .then(data => console.log(data))
+    .then(resp => {
+        const { observations } = resp
+        const { data } = observations
+        const recentTemp = data[0]
+        const { name, local_date_time, air_temp, apparent_t } = recentTemp
+        const dateTime = local_date_time.split('/')[1]
+        document.getElementById('temp').insertAdjacentHTML('beforeend', `${air_temp} &#8451;`)
+        document.getElementById('feel_temp').insertAdjacentHTML('beforeend', `${apparent_t} &#8451;`)
+        document.getElementById('loc').insertAdjacentHTML('beforeend', `${name}`)
+        document.getElementById('updated').insertAdjacentHTML('beforeend', `Last Updated: ${dateTime}`)
+        console.log(dateTime, recentTemp)
+    })
+
+fetch("ftp://ftp2.bom.gov.au/anon/gen/fwo/IDV10450.txt")

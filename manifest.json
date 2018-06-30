@@ -13,6 +13,8 @@
         "history",
         "https://ajax.googleapis.com/",
         "*://*.bom.gov.au/*",
+        "*://*.darksky.net/*",
+        "*://*.virtualearth.net/*",
         "geolocation"
     ]
 }

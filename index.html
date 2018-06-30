@@ -1,40 +1,43 @@
 <html>
 
 <head>
+        <meta charset="UTF-8">
     <title>New Tab</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script type="application/javascript" src="./main.js" />
-    <script type="application/javascript" src="./search.js" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
    
 
 </head>
 
 <body>
-    <div style="right: 20; top: 20; position: fixed; display: flex; flex-direction: column">
+    <div style="right: 20; top: 20; position: absolute; display: flex; flex-direction: column">
         Currently: <span id="temp" style="font-size: 20"></span>
         <span>(Feels Like: <span id="feel_temp"></span>)</span>
         <span id="updated"></span>
         <span id="loc"></span>
+        <span id="summary"></span>
     </div>
     <div style="justify-content: center; flex-direction: row">
-        <h1>Test</h1>
+        <h3 id="hello"></h3>
         <div class="row">
                 <div class="input-field col s6">
-                  <input value="" id="quick" type="text" class="validate" style="color: white">
-                  <label class="active" for="quick">Enter something quickly</label>
+                  <input value="" id="search" type="text" class="validate" style="color: white">
+                  <label class="active" for="search">Enter something quickly</label>
                 </div>
               </div>
+              <div id="items"></div>
     </div>
-    <h2>Recently Visited</h2>
+    <h4>Recently Visited</h4>
     <div class="row lastVisited">
         <div id="browserHistory"></div>
     </div>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="application/javascript" src="./main.js" />
+    <script type="application/javascript" src="./search.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+   
 
 </body>
 

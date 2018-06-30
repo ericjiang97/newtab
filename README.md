@@ -1,4 +1,5 @@
 # newtab
+![img](https://i.imgur.com/58pvzTV.jpg)
 
 New tab is a Nifty Extension where it:
 * displays current temperature (currently limited to Melbourne and Sydney) and forecast

@@ -13,14 +13,14 @@ const links = {
     md: { title: "mozilla docs", url: "https://developer.mozilla.org/en-US/" },
     tv: { title: "twitch", url: "https://twitch.tv" },
     yt: { title: "youtube", url: "https://youtube.com" },
-    gm: { title: "gmail", url: "https://gmail.com" },
+    gm: { title: "gmail", url: "https://mail.google.com" },
     gd: { title: "google drive", url: "https://drive.google.com" },
     hn: { title: "hackernews", url: "https://hckrnews.com" },
-    d2: { title: "r/dota2", url: "https://dota2.reddit.com" },
-    yh: { title: "r/youtubehaiku", url: "https://youtubehaiku.reddit.com" },
     rd: { title: "reddit", url: "https://reddit.com" },
     sc: { title: "scrungus.club", url: "http://scrungus.club" },
-    nm: { title: "nice meme!", url: "https://niceme.me" }
+    nm: { title: "nice meme!", url: "https://niceme.me" },
+    ta: { title: "The Age", url: "https://theage.com.au"},
+    abc: { title: "ABC News", url: "http://www.abc.net.au/news/"}
   };
 
 
